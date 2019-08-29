@@ -4,9 +4,6 @@ R2-D2
 A CLI tool that generates passwords
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/R2-D2.svg)](https://npmjs.org/package/R2-D2)
-[![Downloads/week](https://img.shields.io/npm/dw/R2-D2.svg)](https://npmjs.org/package/R2-D2)
-[![License](https://img.shields.io/npm/l/R2-D2.svg)](https://github.com/lycb/R2-D2/blob/master/package.json)
 
 <!-- toc -->
 * [Usage](#usage)
