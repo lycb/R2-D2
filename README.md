@@ -12,25 +12,18 @@ A CLI tool that generates passwords
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g R2-D2
-$ r2d2 COMMAND
-running command...
-$ r2d2 (-v|--version|version)
-R2-D2/0.0.0 linux-x64 node-v10.16.3
-$ r2d2 --help [COMMAND]
-USAGE
-  $ r2d2 COMMAND
+$ git clone https://github.com/lycb/R2-D2.git
 ...
 ```
 <!-- usagestop -->
 # Commands
 <!-- commands -->
 * [`r2d2 generate [PASSWORD_NAME]`](#r2d2-generate-password_name)
-* [`r2d2 list`](#r2d2-list)
 * [`r2d2 remove [PASSWORD_NAME]`](#r2d2-remove-password_name)
+* [`r2d2 list`](#r2d2-list)
 * [`r2d2 help [COMMAND]`](#r2d2-help-command)
 
-## `r2d2 generate [PASSWORD_NAME]`
+### `r2d2 generate [PASSWORD_NAME]`
 
 generate a password :)
 
@@ -44,19 +37,7 @@ OPTIONS
 
 _See code: [src/commands/generate.ts](https://github.com/lycb/R2-D2/blob/v0.0.0/src/commands/generate.ts)_
 
-
-## `r2d2 list`
-
-print out all saved passwords! :o
-
-```
-USAGE
-  $ r2d2 list
-```
-
-_See code: [src/commands/list.ts](https://github.com/lycb/R2-D2/blob/v0.0.0/src/commands/list.ts)_
-
-## `r2d2 remove [PASSWORD_NAME]`
+### `r2d2 remove [PASSWORD_NAME]`
 
 remove password(s) :P
 
@@ -71,7 +52,19 @@ OPTIONS
 
 _See code: [src/commands/remove.ts](https://github.com/lycb/R2-D2/blob/v0.0.0/src/commands/remove.ts)_
 
-## `r2d2 help [COMMAND]`
+### `r2d2 list`
+
+print out all saved passwords! :o
+
+```
+USAGE
+  $ r2d2 list
+```
+
+_See code: [src/commands/list.ts](https://github.com/lycb/R2-D2/blob/v0.0.0/src/commands/list.ts)_
+
+
+### `r2d2 help [COMMAND]`
 
 display help for r2d2
 
