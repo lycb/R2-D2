@@ -1,7 +1,7 @@
 R2-D2
 =====
 
-A tool that generates passwords
+A CLI tool that generates passwords
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/R2-D2.svg)](https://npmjs.org/package/R2-D2)
