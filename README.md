@@ -29,7 +29,6 @@ USAGE
 # Commands
 <!-- commands -->
 * [`r2d2 generate [PASSWORD_NAME]`](#r2d2-generate-password_name)
-* [`r2d2 interact [FILE]`](#r2d2-interact-file)
 * [`r2d2 list`](#r2d2-list)
 * [`r2d2 remove [PASSWORD_NAME]`](#r2d2-remove-password_name)
 * [`r2d2 help [COMMAND]`](#r2d2-help-command)
