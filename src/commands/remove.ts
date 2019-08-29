@@ -18,7 +18,7 @@ export default class Remove extends Command {
     const {args, flags} = this.parse(Remove)
 
     if (flags.all) {
-      this.log(`${chalk.red('WARN!')} All saved passwords will be removed!`);
+      this.log(`${chalk.red('!WARN!')} All saved passwords will be removed!`);
       const prompt = await inquirer.prompt([
       {
         message: "Are you sure you want to delete all passwords?(Y/n)",
@@ -32,7 +32,7 @@ export default class Remove extends Command {
            }
         }
       }]).then(answers => {
-        if (answers.ans === 'y') {
+        if (answers.ans.toLowerCase() === 'y') {
           passwordAPI.removeAll();
         }
       })
@@ -42,12 +42,12 @@ export default class Remove extends Command {
       if (password) {
         if (passwordAPI.find(password)) {
           passwordAPI.remove(password)
-          this.log(`${chalk.green('[Success]')} Your password with name: [${password}] was successfully removed`)
+          this.log(`${chalk.green('[SUCCESS]')} Your password with name: [${password}] was successfully removed`)
         } else {
-          this.log(chalk.red('password with name: [' + password + '] does not exist. Please pick another name'))
+          this.log(`${chalk.red('!ERROR!')} Password with name: [${password}] does not exist. Please pick another name.`);
         }
       } else {
-        this.log(chalk.red('please specify a name for your password'))
+        this.log(`${chalk.red('!ERROR!')} Please specify a name for your password`);
       }
     }
   }

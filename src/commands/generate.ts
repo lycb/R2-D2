@@ -19,12 +19,12 @@ export default class Generate extends Command {
     if (password) {
       if (!passwordAPI.find(password)) {
         passwordAPI.generate(password)
-        this.log(`${chalk.green('[Success]')} Your password is: ${passwordAPI.get(password)}`)
+        this.log(`${chalk.green('[SUCCESS]')} Your password is: [${passwordAPI.get(password)}]`)
       } else {
-        this.log(chalk.red('password with name: [' + password + '] already exists. Please pick another name'))
+        this.log(`${chalk.red('!ERROR!')} Password with name: [${password}] already exists. Please pick another name.`);
       }
     } else {
-      this.log(chalk.red('please specify a name for your password'))
+      this.log(`${chalk.red('!ERROR!')} Please specify a name for your password.`);
     }
   }
 }

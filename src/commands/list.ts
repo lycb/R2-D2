@@ -16,10 +16,13 @@ export default class List extends Command {
     })
 
     const passwords = passwordAPI.list()
-    for (let i = 0; i < passwords.length; i++) {
-      table.push([ i, passwords[i].name, passwords[i].value ])
-    }
-
-    this.log(table.toString())
+    if (passwords.length === 0) {
+      this.log(`${chalk.red('!EMPTY!')} No password to display. Generate more.`);
+    } else {
+      for (let i = 0; i < passwords.length; i++) {
+        table.push([ i, passwords[i].name, passwords[i].value ])
+      }
+      this.log(table.toString())
+      }
   }
 }
