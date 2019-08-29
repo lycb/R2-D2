@@ -28,28 +28,52 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`r2d2 hello [FILE]`](#r2d2-hello-file)
+* [`r2d2 generate [PASSWORD_NAME]`](#r2d2-generate-password_name)
+* [`r2d2 interact [FILE]`](#r2d2-interact-file)
+* [`r2d2 list`](#r2d2-list)
+* [`r2d2 remove [PASSWORD_NAME]`](#r2d2-remove-password_name)
 * [`r2d2 help [COMMAND]`](#r2d2-help-command)
 
-## `r2d2 hello [FILE]`
+## `r2d2 generate [PASSWORD_NAME]`
 
-describe the command here
+generate a password :)
 
 ```
 USAGE
-  $ r2d2 hello [FILE]
+  $ r2d2 generate [PASSWORD_NAME]
 
 OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-
-EXAMPLE
-  $ r2d2 hello
-  hello world from ./src/hello.ts!
+  -h, --help  show CLI help
 ```
 
-_See code: [src/commands/hello.ts](https://github.com/lycb/R2-D2/blob/v0.0.0/src/commands/hello.ts)_
+_See code: [src/commands/generate.ts](https://github.com/lycb/R2-D2/blob/v0.0.0/src/commands/generate.ts)_
+
+
+## `r2d2 list`
+
+print out all saved passwords! :o
+
+```
+USAGE
+  $ r2d2 list
+```
+
+_See code: [src/commands/list.ts](https://github.com/lycb/R2-D2/blob/v0.0.0/src/commands/list.ts)_
+
+## `r2d2 remove [PASSWORD_NAME]`
+
+remove password(s) :P
+
+```
+USAGE
+  $ r2d2 remove [PASSWORD_NAME]
+
+OPTIONS
+  -a, --all   remove all passwords
+  -h, --help  show CLI help
+```
+
+_See code: [src/commands/remove.ts](https://github.com/lycb/R2-D2/blob/v0.0.0/src/commands/remove.ts)_
 
 ## `r2d2 help [COMMAND]`
 
@@ -68,3 +92,4 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.2.1/src/commands/help.ts)_
 <!-- commandsstop -->
+
