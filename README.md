@@ -60,21 +60,27 @@ jenny$ r2d2 list
 ├───────┼───────┼──────────┤
 │ 1     │ sean  │ 58bfvnmx │
 └───────┴───────┴──────────┘
+
 jenny$ r2d2 remove -a
 !WARN! All saved passwords will be removed!
 ? Are you sure you want to delete all passwords?(Y/n) y
+
 jenny$ r2d2 list
 !EMPTY! No password to display. Generate more.
+
 jenny$ r2d2 generate helloworld
 [SUCCESS] Your password is: [9r9a42r9]
+
 jenny$ r2d2 list
 ┌───────┬────────────┬──────────┐
 │ index │ name       │ password │
 ├───────┼────────────┼──────────┤
 │ 0     │ helloworld │ 9r9a42r9 │
 └───────┴────────────┴──────────┘
+
 jenny$ r2d2 remove helloworld
 [SUCCESS] Your password with name: [helloworld] was successfully removed
+
 jenny$ r2d2 list
 !EMPTY! No password to display. Generate more.
 ```
