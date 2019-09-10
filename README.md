@@ -15,9 +15,9 @@ R2-D2 is a command-line tool that generates, stores, and removes your passwords 
 
 # Commands
 <!-- commands -->
-### `r2d2 generate [PASSWORD_NAME]`
+#### `r2d2 generate [PASSWORD_NAME]`
 
-generate a password :)
+Generate passwords. User **must** specify a name for the password. 
 
 ```
 USAGE
@@ -27,9 +27,9 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-### `r2d2 remove [PASSWORD_NAME]`
+#### `r2d2 remove [PASSWORD_NAME]`
 
-remove password(s) :P
+Removes a specific password or all passwords.
 
 ```
 USAGE
@@ -40,9 +40,9 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-### `r2d2 list`
+#### `r2d2 list`
 
-print out all saved passwords! :o
+Prints out all the saved passwords. 
 
 ```
 USAGE
@@ -84,7 +84,6 @@ jenny$ r2d2 list
     * No encryption is currently implemented
 2. Can I change where to save the file? 
     * Yes, you can edit the PasswordAPI.js file and change where you save the password 
-<!-- Add in a page on instructions on HOW to change where you save your file -->
 3. Is there a limit to how many passwords I can save?
     * There is no limit.
 4. Do I have special characters? 
@@ -93,7 +92,7 @@ jenny$ r2d2 list
     * Currently you cannot, all passwords will be 8 characters long
 
 # Support
-Please create a new issue and I will get back to you soon.
+1. Create an issue
 
 # Contribution Guidelines
 1. Fork
