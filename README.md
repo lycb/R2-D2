@@ -15,10 +15,6 @@ R2-D2 is a command-line tool that generates, stores, and removes your passwords 
 
 # Commands
 <!-- commands -->
-* [`r2d2 generate [PASSWORD_NAME]`](#r2d2-generate-password_name)
-* [`r2d2 remove [PASSWORD_NAME]`](#r2d2-remove-password_name)
-* [`r2d2 list`](#r2d2-list)
-
 ### `r2d2 generate [PASSWORD_NAME]`
 
 generate a password :)
