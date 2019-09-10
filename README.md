@@ -1,17 +1,24 @@
 R2-D2
 =====
-R2-D2 is a command-line tool that generates, stores, and removes your passwords from your local machine! 
+R2-D2 is a command-line tool that generates, stores, and removes your passwords from the comfort of your own terminal!
 
 # Why?
 * Help you come up with stronger passwords
 * Help you store passwords 
 
 # Install
-1. `clone https://github.com/lycb/R2-D2`
-2. `cd R2-D2` 
-3. `npm install`
-4. `npm link`
-5. `r2d2 --help`
+**Requirements**
+* Unix/Linux machine
+* Terminal
+
+**Follow these steps**
+```
+clone https://github.com/lycb/R2-D2
+cd R2-D2
+npm install
+npm link
+r2d2 --help
+```
 
 # Commands
 <!-- commands -->
