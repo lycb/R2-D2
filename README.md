@@ -1,5 +1,6 @@
 R2-D2
 =====
+R2-D2 is a command-line tool that generates, stores, and removes your passwords from your local machine! 
 
 # Why?
 * Help you come up with stronger passwords
@@ -54,7 +55,7 @@ USAGE
 <!-- commandsstop -->
 
 # Screenshot
-Will add later
+`will add later`
 
 # FAQs
 1. Is the file encrypted / Is it safe?
