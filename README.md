@@ -99,12 +99,12 @@ jenny$ r2d2 list
 
 # Support
 1. Create an issue
+2. Be specific of the issue you want help with
 
 # Contribution Guidelines
 1. Fork
-2. Change the code
+2. Do what you need to do
 3. Make a pull request 
-4. Add suggestions to the suggestion file
 
 # License
 <!-- link below -->
