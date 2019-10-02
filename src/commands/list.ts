@@ -23,6 +23,6 @@ export default class List extends Command {
         table.push([ i, passwords[i].name, passwords[i].value ])
       }
       this.log(table.toString())
-      }
+    }
   }
 }

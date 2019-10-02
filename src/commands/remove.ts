@@ -25,11 +25,11 @@ export default class Remove extends Command {
         type: "input",
         name: "ans",
         validate: function(ans:string) {
-           if(ans.toLowerCase() === "y" || ans.toLowerCase() === "n") {
-             return true;
-           } else {
-             return "Please enter a valid value"
-           }
+          if(ans.toLowerCase() === "y" || ans.toLowerCase() === "n") {
+            return true;
+          } else {
+            return "Please enter a valid value"
+          }
         }
       }]).then(answers => {
         if (answers.ans.toLowerCase() === 'y') {
