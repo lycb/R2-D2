@@ -3,7 +3,7 @@ import * as path from 'path'
 import * as os from 'os'
 
 const passwordFile = path.join(os.homedir(), 'r2d2', 'dontlook.json')
-const allowedChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
+const allowedChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()'
 
 interface Password {
   name: string;
@@ -26,8 +26,9 @@ class passwordAPI {
     fs.writeFileSync(passwordFile, data, { encoding: 'utf-8' })
 	}
 
-	generate(name : string, length : number = 8) {
-    const randChar = () => allowedChars[Math.floor(Math.random() * allowedChars.length)]
+	generate(name : string, length : number = 8, special : boolean = true) {
+    const charsLength = special ? allowedChars.length : allowedChars.length - '!@#$%^&*()'.length
+    const randChar = () => allowedChars[Math.floor(Math.random() * charsLength)]
     const value = [...Array(length)].map(c => randChar()).join('')
 
 		const newPassword : Password = { name, value }
