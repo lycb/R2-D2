@@ -3,7 +3,7 @@ R2-D2
 R2-D2 is a command-line tool that generates, stores, and removes your passwords from the comfort of your own terminal!
 
 # Disclaimer
-Don't actually use this. It is not safe. This is just a CLI project made by a student.
+Don't actually use this. It is not safe. This is just a CLI project made by a student. The name "R2-D2" was the first thing that came to mind when I was writing this program.
 
 # Why?
 * Help you come up with stronger passwords
